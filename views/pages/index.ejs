@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>mp3converter » convertir videos a mp3</title>
+  <meta name="description"
+    content="mp3converter es un convertidor online y gratis que te permite convertir cualquier video de Youtube a un archivo de formato mp3 y descargarlo." />
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" type="text/css" href="/styles/pages/index.css" />
+  <script type="text/javascript" src="/js/pages/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
+  <main>
+    <section id="search_section">
+      <div class="search_section_container">
+        <div id="layout_search_section_container" class="layout_search_section_container">
+          <div id="layout_search_input">
+            <input type="text" id="search_video_input" placeholder="<%= __('placeholder_search')%>" maxlength="43" />
+          </div>
+          <div id="layout_search_button">
+            <button id="search_button" class="search_button" title="<%= __('title_search_btn')%>">
+              <i id="search_button_icon" class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="video_section">
+      <div class="video_section_container">
+        <div class="layout_video_section_container">
+          <div class="preview_video_container">
+            <div id="img_video_preview_container">
+              <img id="img_video_preview" title="<%= __('title_video_preview')%>" alt="video-preview"
+                src="img/no-preview-video.png" />
+            </div>
+            <div id="description_preview_video">
+              <h3 id="title_video_preview"></h3>
+              <p id="duration_video_preview"><%= __('duration_video_preview')%></p>
+            </div>
+          </div>
+          <div class="download_video_container">
+            <div id="progress_bar_video_container">
+              <div id="progress_bar" class="progress_bar"></div>
+            </div>
+            <div class="buttons_video_container" id="buttons_video_container">
+              <div class="btn_download_audio_file_container">
+                <button id="btn_download_audio_file">
+                  <p><%= __('btn_download_txt')%></p>
+                </button>
+              </div>
+              <div class="btn_home_container">
+                <button id="btn_home">
+                  <p><%= __('btn_home_txt')%></p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="data_section">
+      <div class="data_section_container">
+        <div class="layout_data_section_container">
+          <article class="data_section_info">
+            <div class="titles_help_section_container first">
+              <div class="layout_titles_help_section">
+                <h2><%= __('acc_q_1')%></h2>
+              </div>
+            </div>
+            <div class="data_help_section">
+              <div class="layout-data_help_section">
+                <p>
+                  <%= __('acc_r_1')%>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="data_section_info">
+            <div class="titles_help_section_container">
+              <div class="layout_titles_help_section">
+                <h2><%= __('acc_q_2')%></h2>
+              </div>
+            </div>
+            <div class="data_help_section">
+              <div class="layout-data_help_section">
+                <p><%= __('acc_r_2')%></p>
+              </div>
+            </div>
+          </article>
+          <article class="data_section_info">
+            <div class="titles_help_section_container">
+              <div class="layout_titles_help_section">
+                <h2><%= __('acc_q_3')%></h2>
+              </div>
+            </div>
+            <div class="data_help_section">
+              <div class="layout-data_help_section">
+                <p><%= __('acc_r_3')%></p>
+              </div>
+            </div>
+          </article>
+          <article class="data_section_info">
+            <div class="titles_help_section_container">
+              <div class="layout_titles_help_section">
+                <h2><%= __('acc_q_4')%></h2>
+              </div>
+            </div>
+            <div class="data_help_section last">
+              <div class="layout-data_help_section">
+                <p>
+                  <%= __('acc_r_4_1')%>
+                </p>
+                <ul>
+                  <li><%= __('acc_r_4_2')%></li>
+                  <li><%= __('acc_r_4_3')%></li>
+                  <li><%= __('acc_r_4_4')%></li>
+                  <li><%= __('acc_r_4_5')%></li>
+                  <li>
+                    <%= __('acc_r_4_6')%>
+                  </li>
+                </ul>
+                <p>
+                  <%= __('acc_r_4_7')%>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="background_effect_menu" id="background_effect_menu"></div>
+  </main>
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+</body>
+
+</html>

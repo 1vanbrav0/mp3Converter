@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: Tahoma;
+    font-size: 16px;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main {
+    width: 100%;
+    flex: 1 0 auto;
+    background-color: #fff;
+    transition: margin-left .15s;
+}
+
+section {
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: left;
+    font-size: 1em;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+@media (min-width: 220px) and (max-width: 300px) {}
+
+@media (min-width: 300px) and (max-width: 365px) {}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {}
+
+@media (min-width: 450px) and (max-width: 500px) {}
+
+@media (min-width: 500px) and (max-width: 650px) {
+    h1 {
+        font-size: 1.05em;
+    }
+
+    h2 {
+        font-size: 1.05em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 720px) {
+    h1 {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 800px) {
+    h1 {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    h1 {
+        font-size: 1.15em;
+    }
+
+    h2 {
+        font-size: 1.15em;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 1.15em;
+    }
+
+    h2 {
+        font-size: 1.15em;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1050px) {}
+
+@media (min-width: 1150px) and (max-width: 1200px) {}
+
+@media (min-width: 1200px) and (max-width: 1300px) {}
+
+@media (min-width: 1150px) and (max-width: 1300px) {}
+
+@media (min-width: 1300px) and (max-width: 1500px) {}
+
+@media (min-width: 1500px) {}

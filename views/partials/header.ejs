@@ -1,0 +1,72 @@
+<div class="previous_container_nav">
+    <div class="layout_previous_container_nav">
+        <div class="container_logo">
+            <a href="/">
+                <div id="layout_container_logo">
+                    <i class="fas fa-headphones" id="layout_logo_audiofile"></i>
+                    <div id="layout_logo_txt">mp3</div>
+                </div>
+            </a>
+        </div>
+        <div class="layout_container_button_menu">
+            <i class="fas fa-bars" id="button_toggle_menu" title="<%= __('title_btn_menu')%>"></i>
+        </div>
+    </div>
+</div>
+<nav>
+    <ul class="container_nav" id="container_nav">
+        <div class="layout_container_nav">
+            <li>
+                <div class="nav_container_languages" title="<%= __('title_lang')%>">
+                    <div id="nav_container_languages_drop_down" class="nav_container_languages_drop_down">
+                        <a>
+                            <%= __('txt_nav_lang')%>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div id="container_languages_list" class="container_languages_list">
+                        <div class="languages_list">
+                            <a id="lang_es">
+                                <div class="img_lang_container">
+                                    <span class="img_lang" id="img_lang_es"></span>
+                                </div>
+                                <div class="txt_lang_container">
+                                    <p><%= __('txt_nav_lang_spanish')%></p>
+                                </div>
+                            </a>
+                            <a id="lang_en">
+                                <div class="img_lang_container">
+                                    <span class="img_lang" id="img_lang_en"></span>
+                                </div>
+                                <div class="txt_lang_container">
+                                    <p><%= __('txt_nav_lang_english')%></p>
+                                </div>
+                            </a>
+                            <a id="lang_pt">
+                                <div class="img_lang_container">
+                                    <span class="img_lang" id="img_lang_pt"></span>
+                                </div>
+                                <div class="txt_lang_container">
+                                    <p><%= __('txt_nav_lang_portuguese')%></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/1vanbrav0/mp3converter" title="<%= __('title_gh')%>" target="_blank">
+                    <%= __('txt_nav_gh')%>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="<%= __('title_pp')%>" target="_blank">
+                    <%= __('txt_nav_pp')%>
+                    <i class="fas fa-donate"></i>
+                </a>
+            </li>
+            <i class="fas fa-times" id="button_close_menu" title="<%= __('title_btn_close_menu')%>"></i>
+        </div>
+    </ul>
+</nav>
