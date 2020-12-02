@@ -25,7 +25,7 @@ main {
     width: 100%;
     flex: 1 0 auto;
     background-color: #fff;
-    transition: margin-left .15s;
+    transition: margin-left .2s;
 }
 
 section {

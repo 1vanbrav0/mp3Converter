@@ -3,7 +3,7 @@ header {
     background-color: #40a1e0;
     padding-top: 1.7em;
     padding-bottom: 1.7em;
-    transition: margin-left .15s;
+    transition: margin-left .2s;
 }
 
 .previous_container_nav {
@@ -28,7 +28,7 @@ header {
     color: #fff;
     font-size: 1.6em;
     cursor: pointer;
-    transition: 0.15s;
+    transition: 0.2s;
 }
 
 .container_logo {
@@ -73,7 +73,7 @@ nav {
     left: 0;
     background-color: #fff;
     overflow: hidden;
-    transition: 0.15s;
+    transition: 0.2s;
     display: flex;
     padding-top: 6.5em;
 }
@@ -99,7 +99,7 @@ nav {
     font-size: 1.1rem;
     color: #40a1e0;
     margin-left: 1em;
-    transition: 0.15s;
+    transition: 0.2s;
 }
 
 .nav_container_languages {
@@ -118,10 +118,9 @@ nav {
 
 .container_languages_list {
     width: 100%;
-    margin-top: 1em;
     max-height: 0;
     margin-left: 4.7rem;
-    transition: max-height 0.15s ease-out;
+    transition: max-height 0.2s ease-out;
     overflow: hidden;
 }
 
@@ -131,6 +130,7 @@ nav {
 }
 
 .languages_list {
+    margin-top: 1em;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@ nav {
 
 .txt_lang_container p{
     font-size: .9rem;
-    color: rgb(15, 15, 15);
+    color: #303030;
 }
 
 .img_lang {
@@ -199,7 +199,7 @@ nav {
     color: #40a1e0;
     font-size: 1.8em;
     cursor: pointer;
-    transition: 0.15s;
+    transition: 0.2s;
 }
 
 .layout_container_nav {
@@ -218,7 +218,7 @@ nav {
     display: none;
     position: fixed;
     opacity: 0;
-    transition: 0.15s;
+    transition: 0.2s;
     top: 0;
     left: 0;
     height: 100%;
