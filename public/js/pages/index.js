@@ -125,14 +125,14 @@ function download(url) {
 }
 
 doc_ready(function () {
-
+  var input = document.getElementById("search_video_input");
   document.getElementById("video_section").style.display = "none"; //hide video section
   icons_load();
   nav_ready(); //navigation ready
   txt_duration_video_preview = document.getElementById("duration_video_preview").innerHTML;
 
   document.getElementById("search_button").addEventListener("click", function () { //client side validation
-    var input = document.getElementById("search_video_input");
+
     if (input.value != "") {
       if (yt_link_validate(input.value)) {
         document.getElementById("search_button").disabled = true;
@@ -158,10 +158,12 @@ doc_ready(function () {
   });
 
   document.getElementById("search_video_input").addEventListener("change", function () { // another client side validation
-    var input = document.getElementById("search_video_input");
     if (input.value != "") {
       if (yt_link_validate(input.value)) {
-
+        input.style.borderTopColor = "#cdcdce";
+        input.style.borderLeftColor = "#cdcdce";
+        input.style.borderBottomColor = "#cdcdce";
+        document.getElementById("search_button").style.borderLeftColor = "#cdcdce";
       } else {
         document.getElementById("search_video_input").style.borderTopColor = "#e00000";
         document.getElementById("search_video_input").style.borderLeftColor = "#e00000";
@@ -181,12 +183,22 @@ doc_ready(function () {
   });
 
   document.getElementById("search_video_input").addEventListener("keyup", function () { // another client side validation
-    var input = document.getElementById("search_video_input");
-    if (input.value.length >= 43) {
-      input.style.borderTopColor = "#cdcdce";
-      input.style.borderLeftColor = "#cdcdce";
-      input.style.borderBottomColor = "#cdcdce";
-      document.getElementById("search_button").style.borderLeftColor = "#cdcdce";
+    if (input.value != "") {
+      if (yt_link_validate(input.value)) {
+        input.style.borderTopColor = "#cdcdce";
+        input.style.borderLeftColor = "#cdcdce";
+        input.style.borderBottomColor = "#cdcdce";
+        document.getElementById("search_button").style.borderLeftColor = "#cdcdce";
+      } else {
+        document.getElementById("search_video_input").style.borderTopColor = "#e00000";
+        document.getElementById("search_video_input").style.borderLeftColor = "#e00000";
+        document.getElementById("search_video_input").style.borderBottomColor = "#e00000";
+        document.getElementById("search_button").style.borderLeftColor = "#e00000";
+        document.getElementById("layout_search_section_container").classList.add('error_search');
+        setTimeout(function () {
+          document.getElementById("layout_search_section_container").classList.remove('error_search');
+        }, 300);
+      }
     } else {
       input.style.borderTopColor = "#cdcdce";
       input.style.borderLeftColor = "#cdcdce";

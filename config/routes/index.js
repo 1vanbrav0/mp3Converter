@@ -59,20 +59,19 @@ router.post("/data", (req, res) => {
                 },
             },
         });
-        try {
-            video.on('info', info => {
-                res.json({
-                    author: info.videoDetails.author,
-                    title: info.videoDetails.title,
-                    length: info.videoDetails.lengthSeconds,
-                    thumbnail: info.videoDetails.thumbnail
-                });
+        video.on('info', info => {
+            res.json({
+                author: info.videoDetails.author,
+                title: info.videoDetails.title,
+                length: info.videoDetails.lengthSeconds,
+                thumbnail: info.videoDetails.thumbnail
             });
-        } catch (err) {
+        });
+        video.on('error', () => {
             res.json({
                 Exception: '9LTTPPY96gA8WvCxjqqbda5DzkH837'
             }); // Video unavailable
-        }
+        });
     } else {
         res.json({
             Exception: 'VxdVGegV3eSeBiBmqGRLfM59XhF2fU'
