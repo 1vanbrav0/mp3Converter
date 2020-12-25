@@ -42,4 +42,4 @@ app.use(router); // use router middleware
 app.use(express.static('public'));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, '../../views'));
-app.listen(5000); //server deploy
+app.listen(3000); //server deploy
