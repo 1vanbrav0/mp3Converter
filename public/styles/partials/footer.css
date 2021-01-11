@@ -1,10 +1,10 @@
 footer {
     width: 100%;
     flex-shrink: 0;
-    background-color: #40a1e0;
-    padding-top: 1.815em;
-    padding-bottom: 1.815em;
-    transition: margin-left .2s;
+    background-color: #2c9ae2;
+    padding-top: 1.815rem;
+    padding-bottom: 1.815rem;
+    transition: margin-left .25s;
 }
 
 .general_footer_container {
@@ -24,8 +24,8 @@ footer {
 .footer_links {
     width: 100%;
     display: flex;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #fff;
 }
 
 .layout_footer_links {
@@ -38,19 +38,19 @@ footer {
     width: 50%;
     display: flex;
     align-items: center;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 .footer_links div i {
     color: #fff;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 
 
 .data_footer {
     width: 100%;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .data_footer div{
@@ -59,7 +59,7 @@ footer {
 
 .data_footer p {
     color: #fff;
-    font-size: 0.95em;
+    font-size: 0.95rem;
     text-align: justify;
     font-style: italic;
 }
@@ -78,72 +78,63 @@ footer {
 
 @media (min-width: 400px) and (max-width: 450px) {
     footer {
-        padding-top: 1.7975em;
-        padding-bottom: 1.7975em;
+        padding-top: 1.7975rem;
+        padding-bottom: 1.7975rem;
     }
 }
 
 @media (min-width: 450px) and (max-width: 500px) {
     footer {
-        padding-top: 1.8317em;
-        padding-bottom: 1.8317em;
+        padding-top: 1.8317rem;
+        padding-bottom: 1.8317rem;
     }
 }
 
 @media (min-width: 500px) and (max-width: 650px) {
     footer {
-        padding-top: 1.8385em;
-        padding-bottom: 1.8385em;
+        padding-top: 1.8385rem;
+        padding-bottom: 1.8385rem;
     }
 }
 
 @media (min-width: 650px) and (max-width: 720px) {
     footer {
-        padding-top: 1.875em;
-        padding-bottom: 1.875em;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
     }
 }
 
 @media (min-width: 720px) and (max-width: 800px) {
     footer {
-        padding-top: 1.875em;
-        padding-bottom: 1.875em;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
     }
 }
 
 @media (min-width: 800px) and (max-width: 900px) {
     footer {
-        padding-top: 1.935em;
-        padding-bottom: 1.935em;
+        padding-top: 1.935rem;
+        padding-bottom: 1.935rem;
     }
 }
 
 @media (min-width: 900px) {
     footer {
-        padding-top: 1.935em;
-        padding-bottom: 1.935em;
+        padding-top: 1.935rem;
+        padding-bottom: 1.935rem;
     }
 }
 
-@media (min-width: 1050px) {}
-
-@media (min-width: 1150px) and (max-width: 1200px) {}
-
-@media (min-width: 1200px) and (max-width: 1300px) {}
-
 @media (min-width: 1150px) and (max-width: 1300px) {
-    .layout_previous_container_nav {
-        width: 70%;
-    }
 
     .layout_general_footer_container {
-        width: 70%;
+        width: 80%;
     }
 }
 
 @media (min-width: 1300px) and (max-width: 1500px) {
     .layout_general_footer_container {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -152,3 +143,13 @@ footer {
         width: 80%;
     }
 }
+
+@media (min-width: 2000px){
+
+    .layout_general_footer_container {
+        width: 60%;
+    }
+  }
+  
+
+  

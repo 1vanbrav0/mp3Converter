@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 i18n.configure({ //configuration of i18n to get traductions
-  locales: ['es', 'en', 'pt'],
-  defaultLocale: 'es',
+  locales: ['en', 'es', 'pt'],
+  defaultLocale: 'en',
   cookie: 'locale',
   directory: path.join(__dirname, '../languages'),
   updateFiles: false
@@ -23,16 +23,16 @@ app.use(cookieParser()); //use of cookieparser for cookies
 app.use(i18n.init); //use of i18n for traductions
 app.use((req, res, next) => { //set cookie of language
   if (req.cookies.locale === undefined) {
-    res.cookie('locale', 'es', {
+    res.cookie('locale', 'en', {
       maxAge: 900000,
       httpOnly: true
     });
-    req.setLocale('es');
+    req.setLocale('en');
   } else if (req.cookies.locale === "es") {
     req.setLocale('es');
   } else if (req.cookies.locale === "en") {
     req.setLocale('en');
-  } else {
+  } else if (req.cookies.locale === "pt") {
     req.setLocale('pt');
   }
   next();
