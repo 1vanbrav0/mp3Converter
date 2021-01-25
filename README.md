@@ -24,3 +24,8 @@ Final note: the project its done, its not perfect, but it do what it should do, 
 - The mp3 downloaded dont have cover.
 
 I trust that i can fix it but i prefer fix that issues in future projects than in this.
+
+
+Images:
+
+![alt text](https://ibb.co/P6RNc58)
