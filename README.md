@@ -25,6 +25,3 @@ Final note: the project its done, its not perfect, but it do what it should do, 
 
 I trust that i can fix it but i prefer fix that issues in future projects than in this.
 
-
-Images:
-
