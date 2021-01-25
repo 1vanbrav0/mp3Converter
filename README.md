@@ -28,4 +28,3 @@ I trust that i can fix it but i prefer fix that issues in future projects than i
 
 Images:
 
-![alt text](https://ibb.co/P6RNc58)
