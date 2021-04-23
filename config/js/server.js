@@ -4,7 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const i18n = require('i18n');
-let router = require('../routes/index');
+/* let router = require('../routes/index'); */
 
 app.use(bodyParser.urlencoded({
   extended: true
