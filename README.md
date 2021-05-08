@@ -21,7 +21,7 @@ Final note: the project its done, its not perfect, but it do what it should do, 
 
 - Responsive design fails in higher resolutions than 1440p.
 - There are not any http error screen.
-- The mp3 downloaded dont have cover.
+- The mp3 downloaded doesnt has cover.
 
 I trust that i can fix it but i prefer fix that issues in future projects than in this.
 
